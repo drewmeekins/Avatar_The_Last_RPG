@@ -3,6 +3,7 @@ const playGame = {
     startGame(name) {
         this.restart(name)
         this.characterSelect(name)
+        console.log('game has started')
     },
 
     restart(name) {
@@ -66,3 +67,5 @@ console.log(airBender)
 console.log(earthBender)
 console.log(fireBender)
 console.log(waterBender)
+
+// console.log(playGame.startGame(earthBender.name))
