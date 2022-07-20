@@ -31,5 +31,17 @@ header{
 }
 
 #aangImage{
-    bck
+    background-color: white;
+}
+
+#tophImage{
+    background-color: green;
+}
+
+#zukoImage{
+    background-color: red;
+}
+
+#kataraImage{
+    background-color: lightblue
 }
