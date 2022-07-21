@@ -7,7 +7,24 @@ const playGame = {
     },
 
     restart(name) {
-        
+        if(name == 'Aang'){
+            new Player1('Aang', ['Kick', 'Wind Slash', 'Tornado'], 'air')
+            console.log('Player 1 chose Aang')
+        }else if(name == 'Toph'){
+            new Player1('Toph', ['Punch', 'Stomp', 'Earthquake'], 'earth')
+            console.log('Player 1 chose Toph')
+        }else if(name == 'Zuko'){
+            new Player1('Zuko', ['Slash', 'Fireball', 'Lightning'], 'fire')
+            console.log('Player 1 chose Zuko')
+        }else if(name == 'Katara'){
+            new Player1('Katara', ['Slap', 'Water Whip', 'Tsunami'], 'water')
+            console.log('Player 1 chose Katara')
+        }else{
+            alert('error, character not selected')
+            console.log('error, character not selected')
+        }
+        const characterSelect = document.querySelector('.characterSelect')
+        characterSelect.innerHTML = document.
     },
 
     characterSelect(name) {
