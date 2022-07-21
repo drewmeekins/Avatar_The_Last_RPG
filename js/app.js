@@ -8,30 +8,29 @@ const playGame = {
 
     restart(name) {
         if(name == 'Aang'){
-            new Player1('Aang', ['Kick', 'Wind Slash', 'Tornado'], 'air')
-            console.log('Player 1 chose Aang')
+            player1 = characterIndex.airBender
+            console.log(`Player 1 chose ${player1.name}`)
         }else if(name == 'Toph'){
-            new Player1('Toph', ['Punch', 'Stomp', 'Earthquake'], 'earth')
+            player1 = characterIndex.earthBender
             console.log('Player 1 chose Toph')
         }else if(name == 'Zuko'){
-            new Player1('Zuko', ['Slash', 'Fireball', 'Lightning'], 'fire')
+            player1 = characterIndex.fireBender
             console.log('Player 1 chose Zuko')
         }else if(name == 'Katara'){
-            new Player1('Katara', ['Slap', 'Water Whip', 'Tsunami'], 'water')
+            player1 = characterIndex.waterBender
             console.log('Player 1 chose Katara')
         }else{
             alert('error, character not selected')
             console.log('error, character not selected')
         }
         const characterSelect = document.querySelector('.characterSelect')
-        characterSelect.innerHTML = document.
+        characterSelect.innerHTML = `<img src="img/${player1.name}.png">`
     },
 
     characterSelect(name) {
 
     }
 }
-
 
 let player1
 let player2
@@ -75,14 +74,17 @@ class Player2 {
 
 
 // Setup character options
-const airBender = new Player1('Aang', ['Kick', 'Wind Slash', 'Tornado'], 'air')
-const earthBender = new Player1('Toph', ['Punch', 'Stomp', 'Earthquake'], 'earth')
-const fireBender = new Player1('Zuko', ['Slash', 'Fireball', 'Lightning'], 'fire')
-const waterBender = new Player1('Katara', ['Slap', 'Water Whip', 'Tsunami'], 'water')
+const characterIndex = {
+    airBender: new Player1('Aang', ['Kick', 'Wind Slash', 'Tornado'], 'air'),
+    earthBender: new Player1('Toph', ['Punch', 'Stomp', 'Earthquake'], 'earth'),
+    fireBender: new Player1('Zuko', ['Slash', 'Fireball', 'Lightning'], 'fire'),
+    waterBender: new Player1('Katara', ['Slap', 'Water Whip', 'Tsunami'], 'water')
+}
 
-console.log(airBender)
-console.log(earthBender)
-console.log(fireBender)
-console.log(waterBender)
+
+// console.log(airBender)
+// console.log(earthBender)
+// console.log(fireBender)
+// console.log(waterBender)
 
 // console.log(playGame.startGame(earthBender.name))
