@@ -1,39 +1,68 @@
 // Setup Game
 const playGame = {
     startGame(name) {
-        this.restart(name)
         this.characterSelect(name)
+        // this.loadGame(name)
         console.log('game has started')
     },
 
-    restart(name) {
+    characterSelect(name) {
         if(name == 'Aang'){
             player1 = characterIndex.airBender
+            alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
+            const attackList = document.querySelector('.attackList')
+            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Toph'){
             player1 = characterIndex.earthBender
-            console.log('Player 1 chose Toph')
+            alert(`Player 1 chose ${player1.name}`)
+            console.log(`Player 1 chose ${player1.name}`)
+            const attackList = document.querySelector('.attackList')
+            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Zuko'){
             player1 = characterIndex.fireBender
-            console.log('Player 1 chose Zuko')
+            alert(`Player 1 chose ${player1.name}`)
+            console.log(`Player 1 chose ${player1.name}`)
+            const attackList = document.querySelector('.attackList')
+            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Katara'){
             player1 = characterIndex.waterBender
-            console.log('Player 1 chose Katara')
+            alert(`Player 1 chose ${player1.name}`)
+            console.log(`Player 1 chose ${player1.name}`)
+            const attackList = document.querySelector('.attackList')
+            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else{
             alert('error, character not selected')
             console.log('error, character not selected')
         }
-        const characterSelect = document.querySelector('.characterSelect')
-        characterSelect.innerHTML = `<img src="img/${player1.name}.png">`
+        const loadLevel = document.querySelector('.characterSelect')
+        loadLevel.innerHTML = `<img src="img/${player1.name}.png">`
     },
 
-    characterSelect(name) {
+    // loadGame(name) {
+    //     header = document.querySelector('header')
+    //     attackList = document.querySelector('.attackList')
+    //     level = document.querySelector('.level')
+    // },
 
+    startFight(){
+
+    },
+
+
+    attackLight() {
+        console.log(player1.attacks[0])
     }
 }
 
+
+
 let player1
 let player2
+let header
+let attackList
+let level
+
 
 // typical character setup
 class Player1 {
