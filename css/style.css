@@ -5,6 +5,10 @@ body{
     align-items: center;
 }
 
+.gameLevel{
+    visibility: hidden;
+}
+
 header{
     display: flex;
     flex-direction: column;

@@ -35,23 +35,24 @@ const playGame = {
             alert('error, character not selected')
             console.log('error, character not selected')
         }
-        const loadLevel = document.querySelector('.characterSelect')
-        loadLevel.innerHTML = `<img src="img/${player1.name}.png">`
+        const characterSelect = document.querySelector('.characterSelect')
+        characterSelect.innerHTML = `<img src="img/${player1.name}.png">`
     },
 
     loadGame(name) {
         const header = document.querySelector('header')
         const attackList = document.querySelector('.attackList')
-        const level = document.querySelector('.level')
-        header.innerHTML = '<p>Load Game!</p>'
-        attackList.innerHTML = '<a href="#" class="attackList" onclick = "playGame.startFight()">Start Fight!</a>'
+        const startGame = document.querySelector('.startGame')
+        const level = document.querySelector('.gameLevel')
+        // header.innerHTML = '<p>Load Game!</p>'
+        startGame.innerHTML = '<a href="#" class="startGame" onclick = "playGame.startFight()">Start Fight!</a>';
         level.style.visibility = 'visible'
     },
 
     startFight(){
         const header = document.querySelector('header')
         const attackList = document.querySelector('.attackList')
-        const level = document.querySelector('.level')
+        const level = document.querySelector('.gameLevel')
         let player2 = getRandomCharacter(characterIndex)
         console.log(player2)
     },
