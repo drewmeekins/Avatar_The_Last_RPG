@@ -45,7 +45,7 @@ const playGame = {
         const startGame = document.querySelector('.startGame')
         const level = document.querySelector('.gameLevel')
         // header.innerHTML = '<p>Load Game!</p>'
-        startGame.innerHTML = '<a href="#" class="startGame" onclick = "playGame.startFight()">Start Fight!</a>';
+        startGame.innerHTML = '<a href="battle.html" class="startGame" onclick = "playGame.startFight()">Start Fight!</a>';
         level.style.visibility = 'visible'
     },
 
@@ -131,3 +131,45 @@ const getRandomCharacter = (characterIndex) => {
 // console.log(waterBender)
 
 // console.log(playGame.startGame(earthBender.name))
+
+// healthbar setup
+const canvas = document.querySelector('.healthBar')
+const context = canvas.getContext("2d")
+const width = canvas.width = 320
+const height = canvas.width = 480
+
+canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px"
+
+
+class HealthBar{
+    constructor(x, y, w, h, maxHealth, color){
+        this.x = x
+        this.y = y
+        this.w = w
+        this.h = h
+        this.maxHealth = maxHealth
+        this.maxWidth = w
+        this.color = color
+        this.health = maxHealth
+        this.color = color
+    }
+
+    show(context) {
+        context.lineWidth = 5
+        context.strokeStyle = '#333'
+        context.fillStyle = this.color
+        context.fillRect(this.x, this.y, this.w, this.h)
+        context.strokeRect(this.x, this.y, this.maxWidth, this.h)
+    }
+}
+
+const healthBar = new HealthBar(20, 20, 50, 30, 100, 'green')
+
+const frame = () => {
+    context.clearRect(0, 0, width, height)
+    healthBar.show(context)
+    requestAnimationFrame(frame)
+    console.log('frame ani')
+}
+
+frame()

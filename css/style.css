@@ -49,3 +49,10 @@ header{
 #kataraImage{
     background-color: lightblue
 }
+
+.healthBar{
+    background: #EEE;
+    display: block;
+    margin: 0 auto;
+    border: solid 6px #444;
+  }
