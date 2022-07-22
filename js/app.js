@@ -1,3 +1,6 @@
+// import healthbar
+// import { canvas } from './healthbar'
+
 // Setup Game
 const playGame = {
     startGame(name) {
@@ -37,6 +40,8 @@ const playGame = {
         }
         const characterSelect = document.querySelector('.characterSelect')
         characterSelect.innerHTML = `<img src="img/${player1.name}.png">`
+        const player1Image = document.querySelectorAll('.player1Image')
+        player1Image.innerHTML = `<img src="img/${player1.name}.png">`
     },
 
     loadGame(name) {
@@ -132,44 +137,8 @@ const getRandomCharacter = (characterIndex) => {
 
 // console.log(playGame.startGame(earthBender.name))
 
-// healthbar setup
-const canvas = document.querySelector('.healthBar')
-const context = canvas.getContext("2d")
-const width = canvas.width = 320
-const height = canvas.width = 480
-
-canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px"
-
-
-class HealthBar{
-    constructor(x, y, w, h, maxHealth, color){
-        this.x = x
-        this.y = y
-        this.w = w
-        this.h = h
-        this.maxHealth = maxHealth
-        this.maxWidth = w
-        this.color = color
-        this.health = maxHealth
-        this.color = color
-    }
-
-    show(context) {
-        context.lineWidth = 5
-        context.strokeStyle = '#333'
-        context.fillStyle = this.color
-        context.fillRect(this.x, this.y, this.w, this.h)
-        context.strokeRect(this.x, this.y, this.maxWidth, this.h)
-    }
-}
-
-const healthBar = new HealthBar(20, 20, 50, 30, 100, 'green')
-
-const frame = () => {
-    context.clearRect(0, 0, width, height)
-    healthBar.show(context)
-    requestAnimationFrame(frame)
-    console.log('frame ani')
-}
-
-frame()
+// canvas.onlick = function() {
+//     health -= 10
+//     healthBar.updateHealth(health)
+//     console.log('click is working')
+// }

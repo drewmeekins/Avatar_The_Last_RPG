@@ -51,8 +51,13 @@ header{
 }
 
 .healthBar{
-    background: #EEE;
-    display: block;
-    margin: 0 auto;
-    border: solid 6px #444;
+    display: flex;
+    /* justify-content: left; */
+    position: relative;
+    width: 1.5rem;
+    height: 20rem;
+    color: green;
+    margin-top: 2rem;
+    overflow: hidden;
   }
+
