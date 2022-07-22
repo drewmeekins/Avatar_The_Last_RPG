@@ -2,7 +2,7 @@
 const playGame = {
     startGame(name) {
         this.characterSelect(name)
-        // this.loadGame(name)
+        this.loadGame(name)
         console.log('game has started')
     },
 
@@ -11,26 +11,26 @@ const playGame = {
             player1 = characterIndex.airBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
-            const attackList = document.querySelector('.attackList')
-            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
+            // const attackList = document.querySelector('.attackList')
+            // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Toph'){
             player1 = characterIndex.earthBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
-            const attackList = document.querySelector('.attackList')
-            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
+            // const attackList = document.querySelector('.attackList')
+            // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Zuko'){
             player1 = characterIndex.fireBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
-            const attackList = document.querySelector('.attackList')
-            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
+            // const attackList = document.querySelector('.attackList')
+            // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Katara'){
             player1 = characterIndex.waterBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
-            const attackList = document.querySelector('.attackList')
-            attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
+            // const attackList = document.querySelector('.attackList')
+            // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else{
             alert('error, character not selected')
             console.log('error, character not selected')
@@ -39,14 +39,21 @@ const playGame = {
         loadLevel.innerHTML = `<img src="img/${player1.name}.png">`
     },
 
-    // loadGame(name) {
-    //     header = document.querySelector('header')
-    //     attackList = document.querySelector('.attackList')
-    //     level = document.querySelector('.level')
-    // },
+    loadGame(name) {
+        const header = document.querySelector('header')
+        const attackList = document.querySelector('.attackList')
+        const level = document.querySelector('.level')
+        header.innerHTML = '<p>Load Game!</p>'
+        attackList.innerHTML = '<a href="#" class="attackList" onclick = "playGame.startFight()">Start Fight!</a>'
+        level.style.visibility = 'visible'
+    },
 
     startFight(){
-
+        const header = document.querySelector('header')
+        const attackList = document.querySelector('.attackList')
+        const level = document.querySelector('.level')
+        let player2 = getRandomCharacter(characterIndex)
+        console.log(player2)
     },
 
 
@@ -59,9 +66,9 @@ const playGame = {
 
 let player1
 let player2
-let header
-let attackList
-let level
+// let header
+// let attackList
+// let level
 
 
 // typical character setup
@@ -110,6 +117,12 @@ const characterIndex = {
     waterBender: new Player1('Katara', ['Slap', 'Water Whip', 'Tsunami'], 'water')
 }
 
+
+const getRandomCharacter = (characterIndex) => {
+    const keys = Object.keys(characterIndex)
+    return keys[Math.floor(Math.random() * keys.length)]
+}
+// console.log(getRandomCharacter(characterIndex))
 
 // console.log(airBender)
 // console.log(earthBender)
