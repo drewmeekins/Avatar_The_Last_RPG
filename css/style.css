@@ -17,7 +17,6 @@ header{
 .characterSelect{
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gr
 }
 
 .character{
@@ -51,6 +50,12 @@ header{
 }
 
 .player1GUI{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.player2GUI{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -91,7 +96,7 @@ header{
     padding-top: 10px;
 }
 
-#attack{
+#attack1{
     margin-top: 10px;
 }
 
@@ -115,8 +120,10 @@ header{
 }
 
 .cloneBattle{
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    align-content: right;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
 }

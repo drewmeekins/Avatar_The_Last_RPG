@@ -69,9 +69,10 @@ const playGame = {
                 <img src="img/${player1.name}.png" id="player1Image">
             </div>`
         // cloning and fliping the battle hud
-        const cloneBattle = battle.cloneNode(true)
-        cloneBattle.classList.add('cloneBattle')
-        battle.after(cloneBattle)
+        // const cloneBattle = battle.cloneNode(true)
+        // cloneBattle.id('cloneBattle')
+        // cloneBattle.classList.add('cloneBattle')
+        // battle.after(cloneBattle)
     },
 
 
