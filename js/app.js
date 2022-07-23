@@ -73,6 +73,11 @@ const playGame = {
         // cloneBattle.id('cloneBattle')
         // cloneBattle.classList.add('cloneBattle')
         // battle.after(cloneBattle)
+        const player1Name = document.querySelector('.player1Name')
+        player1Name.innerHTML = `${player1.name}`
+
+        const player2Name = document.querySelector('.player2Name')
+        player2Name.innerHTML = `${player2.name}`
     },
 
 

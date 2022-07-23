@@ -96,17 +96,15 @@ header{
     overflow: hidden;
 }
 
-.timer{
+.fight{
     display: flex;
     justify-content: right;
-    position: relative;
-    width: 20rem;
-    height: 2rem;
+    /* position: relative; */
+    /* width: 20rem;
+    height: 2rem; */
     border: solid 2px;
     border-color: black;
     background-color: red;
-    /* margin-top: 2rem; */
-    overflow: hidden;
 }
 
 .healthBarEmpty{
@@ -154,7 +152,7 @@ header{
 }
 
 #player1Image{
-    margin-top: 200px;
+    margin-top: 300px;
     width: 300px;
 }
 
