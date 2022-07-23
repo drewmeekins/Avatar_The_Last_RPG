@@ -64,13 +64,13 @@ header{
 .health{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    /* justify-content: left; */
     /* margin-bottom: 2rem; */
 }
 
-.healthBar{
+.healthBar1{
     display: flex;
-    justify-content: left;
+    /* justify-content: left; */
     position: relative;
     width: 20rem;
     height: 2rem;
@@ -79,7 +79,19 @@ header{
     background-color: green;
     /* margin-top: 2rem; */
     overflow: hidden;
-    
+}
+
+.healthBar2{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    width: 20rem;
+    height: 2rem;
+    border: solid 2px;
+    border-color: black;
+    background-color: green;
+    /* margin-top: 2rem; */
+    overflow: hidden;
 }
 
 .healthBarEmpty{
@@ -91,12 +103,16 @@ header{
 .attacks{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    /* align-items: left; */
     width: 160px;
     padding-top: 10px;
 }
 
 #attack1{
+    margin-top: 10px;
+}
+
+#attack2{
     margin-top: 10px;
 }
 
@@ -114,16 +130,7 @@ header{
 
 .battle{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     visibility: hidden;
-    align-content: left;
-}
-
-.cloneBattle{
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -ms-filter: fliph; /*IE*/
-    filter: fliph; /*IE*/
+    /* align-content: left; */
 }
