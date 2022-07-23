@@ -1,5 +1,8 @@
 body{
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-image: url('../img/background.png');
+    background-size: 100%;
+    background-repeat: cover;
 }
 
 .gameLevel{
