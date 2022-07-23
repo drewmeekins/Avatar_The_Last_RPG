@@ -50,7 +50,7 @@ const playGame = {
         const startGame = document.querySelector('.startGame')
         const level = document.querySelector('.gameLevel')
         // header.innerHTML = '<p>Load Game!</p>'
-        startGame.innerHTML = '<a href="battle.html" class="startGame" onclick = "playGame.startFight()">Start Fight!</a>';
+        startGame.innerHTML = '<a href="#" class="startGame" onclick = "playGame.startFight()">Start Fight!</a>';
         level.style.visibility = 'visible'
     },
 
@@ -58,8 +58,20 @@ const playGame = {
         const header = document.querySelector('header')
         const attackList = document.querySelector('.attackList')
         const level = document.querySelector('.gameLevel')
+        const battle = document.querySelector('.battle')
+        const startUp = document.querySelector('.startUp')
+        battle.style.visibility = 'visible'
+        startUp.style.display = 'none'
         let player2 = getRandomCharacter(characterIndex)
         console.log(player2)
+        const characterImage = document.querySelector('.player1')
+        characterImage.innerHTML = `<div class="player1Image">
+                <img src="img/${player1.name}.png" id="player1Image">
+            </div>`
+        // cloning and fliping the battle hud
+        const cloneBattle = battle.cloneNode(true)
+        cloneBattle.classList.add('cloneBattle')
+        battle.after(cloneBattle)
     },
 
 
@@ -67,6 +79,11 @@ const playGame = {
         console.log(player1.attacks[0])
     }
 }
+
+const makeImage = () => {
+    
+}
+
 
 
 

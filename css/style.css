@@ -1,8 +1,5 @@
 body{
     background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .gameLevel{
@@ -20,6 +17,7 @@ header{
 .characterSelect{
     display: grid;
     grid-template-columns: 2fr 2fr;
+    gr
 }
 
 .character{
@@ -30,7 +28,7 @@ header{
 }
 
 .characterImage{
-    width: 200px;
+    width: 50%;
     margin-bottom: 20px;
 }
 
@@ -40,6 +38,8 @@ header{
 
 #tophImage{
     background-color: green;
+    width: 30%;
+    height: auto;
 }
 
 #zukoImage{
@@ -50,14 +50,73 @@ header{
     background-color: lightblue
 }
 
+.player1GUI{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.health{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* margin-bottom: 2rem; */
+}
+
 .healthBar{
     display: flex;
-    /* justify-content: left; */
+    justify-content: left;
     position: relative;
-    width: 1.5rem;
-    height: 20rem;
-    color: green;
-    margin-top: 2rem;
+    width: 20rem;
+    height: 2rem;
+    border: solid 2px;
+    border-color: black;
+    background-color: green;
+    /* margin-top: 2rem; */
     overflow: hidden;
-  }
+    
+}
 
+.healthBarEmpty{
+    height: 100%;
+    background-color: green;
+    width: 0%;
+}
+
+.attacks{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 160px;
+    padding-top: 10px;
+}
+
+#attack{
+    margin-top: 10px;
+}
+
+#player1Image{
+    margin-top: 200px;
+    width: 300px;
+}
+
+.startUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.battle{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    align-content: left;
+}
+
+.cloneBattle{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    align-content: right;
+}

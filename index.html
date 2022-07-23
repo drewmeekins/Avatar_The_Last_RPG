@@ -8,59 +8,88 @@
     <title>Avatar: The Last RPG</title>
 </head>
 <body>
-    <header>
-        <h1>Avatar: The Last RPG</h1>
-    </header>
-    
-    <!-- <div class="header">
-        <h1>Avatar: The Last RPG</h1>
-    </div> -->
+    <div class="startUp">
+        <header>
+            <h1>Avatar: The Last RPG</h1>
+        </header>
+        
+        <!-- <div class="header">
+            <h1>Avatar: The Last RPG</h1>
+        </div> -->
 
-    <div class="characterSelect">
-        <div class="character" id="aang">
-            <h2>Aang</h2>
-            <p>Air Bender</p>
-            <img src="img/Aang.png" class="characterImage" id="aangImage" alt="">
-            <a href="#" onclick="playGame.startGame('Aang')"><button id="aangButton">Select Aang</button></a>
+        <div class="characterSelect">
+            <div class="character" id="aang">
+                <h2>Aang</h2>
+                <p>Air Bender</p>
+                <img src="img/Aang.png" class="characterImage" id="aangImage" alt="">
+                <a href="#" onclick="playGame.startGame('Aang')"><button id="aangButton">Select Aang</button></a>
+            </div>
+
+            <div class="character" id="toph">
+                <h2>Toph</h2>
+                <p>Earth Bender</p>
+                <img src="img/Toph.png" class="characterImage" id="tophImage" alt="">
+                <a href="#" onclick="playGame.startGame('Toph')"><button id="tophButton">Select Toph</button></a>
+                
+            </div>
+
+            <div class="character" id="zuko">
+                <h2>Zuko</h2>
+                <p>Fire Bender</p>
+                <img src="img/Zuko.png" class="characterImage" id="zukoImage" alt="">
+                <a href="#" onclick="playGame.startGame('Zuko')"><button id="zukoButton">Select Zuko</button></a>
+            </div>
+
+            <div class="character" id="katara">
+                <h2>Katara</h2>
+                <p>Water Bender</p>
+                <img src="img/Katara.png" class="characterImage" id="kataraImage" alt="">
+                <a href="#" onclick="playGame.startGame('Katara')"><button id="kataraButton">Select Katara</button></a>
+            </div>
         </div>
+        <div class="gameLevel">
+            <div class="level">
 
-        <div class="character" id="toph">
-            <h2>Toph</h2>
-            <p>Earth Bender</p>
-            <img src="img/Toph.png" class="characterImage" id="tophImage" alt="">
-            <a href="#" onclick="playGame.startGame('Toph')"><button id="tophButton">Select Toph</button></a>
-            
-        </div>
+            </div>
 
-        <div class="character" id="zuko">
-            <h2>Zuko</h2>
-            <p>Fire Bender</p>
-            <img src="img/Zuko.png" class="characterImage" id="zukoImage" alt="">
-            <a href="#" onclick="playGame.startGame('Zuko')"><button id="zukoButton">Select Zuko</button></a>
-        </div>
+            <div class="startGame">
 
-        <div class="character" id="katara">
-            <h2>Katara</h2>
-            <p>Water Bender</p>
-            <img src="img/Katara.png" class="characterImage" id="kataraImage" alt="">
-            <a href="#" onclick="playGame.startGame('Katara')"><button id="kataraButton">Select Katara</button></a>
+            </div>
+
+            <div class="attackList">
+                <p>here are your attacks</p>
+            </div>
+        
+            <div class="player2">
+                <p>Player 2</p>
+            </div>
         </div>
     </div>
-    <div class="gameLevel">
-        <div class="level">
 
+
+<!-- battle html -->
+    <div class="battle">
+        <div class="player1GUI">
+            <div class="health">
+                <div class="healthBar">
+                    <div class="healthBarEmpty"></div>
+                </div>
+            </div>
+
+            <div class="attacks">
+                <button class="lightAttack" id="attack">Light Attack</button>
+                <button class="mediumAttack" id="attack">Medium Attack</button>
+                <button class="Heavy Attack" id="attack">Heavy Attack</button>
+            </div>
         </div>
-
-        <div class="startGame">
-
-        </div>
-
-        <div class="attackList">
-            <p>here are your attacks</p>
-        </div>
-     
-        <div class="player2">
-            <p>Player 2</p>
+    
+        <div class="characterFight">
+            <div class="player1">
+    
+                <div class="player1Image">
+                    <img src="" id="player1Image" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
