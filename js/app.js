@@ -79,6 +79,8 @@ const playGame = {
         player1Name.innerHTML = `${player1.name}`
 
         // attack layouts
+        // AIR
+        // attack layouts
         // AIR----------------------
         const attackLightAir = (event) => {
             characterIndex.airBender.attacks[0]
@@ -97,13 +99,25 @@ const playGame = {
         }
         // attack variables
         const lightAir = document.querySelector('.lightAttack')
-        lightAttack.addEventListener('click', attackLightAir())
+        lightAir.addEventListener("click", () => {
+            characterIndex.airBender.attacks[0]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.airBender.attacks[0])
+        })
 
         const mediumAir= document.querySelector('.mediumAttack')
-        mediumAttack.addEventListener('click', mediumLightAir())
+        mediumAir.addEventListener('click', () => {
+            characterIndex.airBender.attacks[1]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.airBender.attacks[1])
+        })
 
         const heavyAir = document.querySelector('.heavyAttack')
-        heavyAttack.addEventListener('click', heavyLightAir())
+        heavyAir.addEventListener('click', () => {
+            characterIndex.airBender.attacks[2]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.airBender.attacks[2])
+        })
 
         // EARTH----------------------
         const attackLightEarth = (event) => {
@@ -123,16 +137,16 @@ const playGame = {
         }
         // attack variables
         const lightEarth = document.querySelector('.lightAttack')
-        lightAttack.addEventListener('click', attackLightEarth())
+        lightEarth.addEventListener('click', attackLightEarth())
 
         const mediumEarth = document.querySelector('.mediumAttack')
-        mediumAttack.addEventListener('click', mediumLightEarth())
+        mediumEarth.addEventListener('click', mediumLightEarth())
 
         const heavyEarth = document.querySelector('.heavyAttack')
-        heavyAttack.addEventListener('click', heavyLightEarth())
+        heavyEarth.addEventListener('click', heavyLightEarth())
 
 
-        // FIRE
+        // FIRE----------------------
         const attackLightFire = (event) => {
             characterIndex.fireBender.attacks[0]
             alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[0]} to do -10 damage`)
@@ -150,15 +164,15 @@ const playGame = {
         }
         // attack variables
         const lightFire= document.querySelector('.lightAttack')
-        lightAttack.addEventListener('click', attackLightFire())
+        lightFire.addEventListener('click', attackLightFire())
 
         const mediumFire = document.querySelector('.mediumAttack')
-        mediumAttack.addEventListener('click', mediumLightFire())
+        mediumFire.addEventListener('click', mediumLightFire())
 
         const heavyFire = document.querySelector('.heavyAttack')
-        heavyAttack.addEventListener('click', heavyLightFire())
+        heavyFire.addEventListener('click', heavyLightFire())
 
-        // WATER
+        // WATER----------------------
         const attackLightWater = (event) => {
             characterIndex.waterBender.attacks[0]
             alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[0]} to do -10 damage`)
@@ -176,14 +190,13 @@ const playGame = {
         }
         // attack variables
         const lightWater = document.querySelector('.lightAttack')
-        lightAttack.addEventListener('click', attackLightWater())
+        lightWater.addEventListener('click', attackLightWater())
 
         const mediumWater = document.querySelector('.mediumAttack')
-        mediumAttack.addEventListener('click', mediumLightWater())
+        mediumWater.addEventListener('click', mediumLightWater())
 
         const heavyWater = document.querySelector('.heavyAttack')
-        heavyAttack.addEventListener('click', heavyLightWater())
-
+        heavyWater.addEventListener('click', heavyLightWater())
 
         
         // if else statements for player2
