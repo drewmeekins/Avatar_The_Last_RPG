@@ -120,6 +120,42 @@ const playGame = {
         })
 
         // EARTH----------------------
+        const attackLightEarth = () => {
+            characterIndex.airBender.attacks[0]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.earthBender.attacks[0])
+        }
+        const attackMediumEarth = () => {
+            characterIndex.earthBender.attacks[1]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.earthBender.attacks[1])
+        }
+        const attackHeavyEarth = () => {
+            characterIndex.earthBender.attacks[2]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.earthBender.attacks[2])
+        }
+        // attack variables
+        const lightEarth = document.querySelector('.lightAttack')
+        lightEarth.addEventListener("click", () => {
+            characterIndex.earthBender.attacks[0]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.earthBender.attacks[0])
+        })
+
+        const mediumEarth= document.querySelector('.mediumAttack')
+        mediumEarth.addEventListener('click', () => {
+            characterIndex.earthBender.attacks[1]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.earthBender.attacks[1])
+        })
+
+        const heavyEarth = document.querySelector('.heavyAttack')
+        heavyEarth.addEventListener('click', () => {
+            characterIndex.earthBender.attacks[2]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.earthBender.attacks[2])
+        })
         // const attackLightEarth = () => {
         //     characterIndex.earthBender.attacks[0]
         //     alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
