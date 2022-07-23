@@ -151,9 +151,22 @@ header{
     margin-top: 10px;
 }
 
+.characterFight{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 #player1Image{
     margin-top: 300px;
     width: 300px;
+}
+
+#player2Image{
+    margin-top: 300px;
+    width: 300px;
+    align-items: right;
+    transform: scaleX(-1);
 }
 
 .startUp{
