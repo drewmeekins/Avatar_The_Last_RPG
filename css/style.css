@@ -185,3 +185,7 @@ header{
     visibility: hidden;
     /* align-content: left; */
 }
+
+h2{
+    color: white;
+}

@@ -78,9 +78,79 @@ const playGame = {
         const player1Name = document.querySelector('.player1Name')
         player1Name.innerHTML = `${player1.name}`
 
-        // attack layouts        
-        // const lightAttack = document.querySelector('.lightAttack')
-        // lightAttack.addEventListener('click', attackLightAir())
+        // attack layouts
+        // AIR
+        const attackLightAir = (event) => {
+            characterIndex.airBender.attacks[0]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.airBender.attacks[0])
+        }
+        const attackMediumAir = (event) => {
+            characterIndex.airBender.attacks[1]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.airBender.attacks[1])
+        }
+        const attackHeavyAir = (event) => {
+            characterIndex.airBender.attacks[2]
+            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.airBender.attacks[2])
+        }
+
+        // EARTH
+        const attackLightEarth = (event) => {
+            characterIndex.earthBender.attacks[0]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.earthBender.attacks[0])
+        }
+        const attackMediumEarth = (event) => {
+            characterIndex.earthBender.attacks[1]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.earthBender.attacks[1])
+        }
+        const attackHeavyEarth = (event) => {
+            characterIndex.earthBender.attacks[2]
+            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.earthBender.attacks[2])
+        }
+
+        // FIRE
+        const attackLightFire = (event) => {
+            characterIndex.fireBender.attacks[0]
+            alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.fireBender.attacks[0])
+        }
+        const attackMediumFire = (event) => {
+            characterIndex.fireBender.attacks[1]
+            alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.fireBender.attacks[1])
+        }
+        const attackHeavyFire = (event) => {
+            characterIndex.fireBender.attacks[2]
+            alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.fireBender.attacks[2])
+        }
+
+        // WATER
+        const attackLightWater = (event) => {
+            characterIndex.waterBender.attacks[0]
+            alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[0]} to do -10 damage`)
+            console.log(characterIndex.waterBender.attacks[0])
+        }
+        const attackMediumWater = (event) => {
+            characterIndex.waterBender.attacks[1]
+            alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[1]} to do -20 damage`)
+            console.log(characterIndex.waterBender.attacks[1])
+        }
+        const attackHeavyWater = (event) => {
+            characterIndex.waterBender.attacks[2]
+            alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[2]} to do -30 damage`)
+            console.log(characterIndex.waterBender.attacks[2])
+        }
+
+
+        
+        const lightAttack = document.querySelector('.lightAttack')
+        lightAttack.addEventListener('click', attackLightAir())
 
         
         // if else statements for player2
@@ -141,11 +211,6 @@ const playGame = {
         // player2Name.innerHTML = `${player2.name}`
         
     },
-
-    attacks() {
-        const lightAttack = document.querySelectorAll('.lightAttack')
-        lightAttack.addEventListener('click', attackLightAir())
-    }
 
 }
 
@@ -232,10 +297,10 @@ const getRandomAttack = (characterIndex) => {
 
 
 // setup attacks
-const attackLightAir = () => {
-    characterIndex.airBender.attacks[0]
-    alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -15 damage`)
-    console.log(characterIndex.airBender.attacks[0])
-}
+// const attackLightAir = () => {
+//     characterIndex.airBender.attacks[0]
+//     alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -15 damage`)
+//     console.log(characterIndex.airBender.attacks[0])
+// }
 
 // console.log(attackLightAir())
