@@ -43,7 +43,7 @@ const playGame = {
     },
 
     // setup attacks
-
+    
 
     loadGame(name) {
         const header = document.querySelector('header')
@@ -78,6 +78,11 @@ const playGame = {
         const player1Name = document.querySelector('.player1Name')
         player1Name.innerHTML = `${player1.name}`
 
+        // attack layouts        
+        // const lightAttack = document.querySelector('.lightAttack')
+        // lightAttack.addEventListener('click', attackLightAir())
+
+        
         // if else statements for player2
         if(characterIndex.airBender.name == 'Aang'){
             player2 = characterIndex.airBender
@@ -136,6 +141,11 @@ const playGame = {
         // player2Name.innerHTML = `${player2.name}`
         
     },
+
+    attacks() {
+        const lightAttack = document.querySelectorAll('.lightAttack')
+        lightAttack.addEventListener('click', attackLightAir())
+    }
 
 }
 
