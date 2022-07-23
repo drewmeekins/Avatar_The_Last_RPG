@@ -14,8 +14,6 @@ const playGame = {
             player1 = characterIndex.airBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
-            // const attackList = document.querySelector('.attackList')
-            // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Toph'){
             player1 = characterIndex.earthBender
             alert(`Player 1 chose ${player1.name}`)
@@ -43,6 +41,9 @@ const playGame = {
         const player1Image = document.querySelectorAll('.player1Image')
         player1Image.innerHTML = `<img src="img/${player1.name}.png">`
     },
+
+    // setup attacks
+
 
     loadGame(name) {
         const header = document.querySelector('header')
@@ -136,14 +137,6 @@ const playGame = {
         
     },
 
-
-    attackLight() {
-        console.log(player1.attacks[0])
-    }
-}
-
-const makeImage = () => {
-    
 }
 
 
@@ -207,6 +200,11 @@ const getRandomCharacter = (characterIndex) => {
     const keys = Object.keys(characterIndex)
     return keys[Math.floor(Math.random() * keys.length)]
 }
+
+const getRandomAttack = (characterIndex) => {
+    const keys = Object.keys(characterIndex)
+    return keys[Math.floor(Math.random() * keys.length)]
+}
 // console.log(getRandomCharacter(characterIndex))
 
 // console.log(airBender)
@@ -222,4 +220,12 @@ const getRandomCharacter = (characterIndex) => {
 //     console.log('click is working')
 // }
 
-console.log(characterIndex.earthBender.name)
+
+// setup attacks
+const attackLightAir = () => {
+    characterIndex.airBender.attacks[0]
+    alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -15 damage`)
+    console.log(characterIndex.airBender.attacks[0])
+}
+
+// console.log(attackLightAir())
