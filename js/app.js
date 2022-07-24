@@ -14,16 +14,129 @@ const playGame = {
             player1 = characterIndex.airBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
+        // AIR----------------------
+            const attackLightAir = () => {
+                characterIndex.airBender.attacks[0]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.airBender.attacks[0])
+            }
+            const attackMediumAir = () => {
+                characterIndex.airBender.attacks[1]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.airBender.attacks[1])
+            }
+            const attackHeavyAir = () => {
+                characterIndex.airBender.attacks[2]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.airBender.attacks[2])
+            }
+            // attack variables
+            const lightAir = document.querySelector('.lightAttack')
+            lightAir.addEventListener("click", () => {
+                characterIndex.airBender.attacks[0]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.airBender.attacks[0])
+            })
+
+            const mediumAir= document.querySelector('.mediumAttack')
+            mediumAir.addEventListener('click', () => {
+                characterIndex.airBender.attacks[1]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.airBender.attacks[1])
+            })
+
+            const heavyAir = document.querySelector('.heavyAttack')
+            heavyAir.addEventListener('click', () => {
+                characterIndex.airBender.attacks[2]
+                alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.airBender.attacks[2])
+        })
         }else if(name == 'Toph'){
             player1 = characterIndex.earthBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
+
+        // EARTH----------------------
+            const attackLightEarth = () => {
+                characterIndex.earthBender.attacks[0]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.earthBender.attacks[0])
+            }
+            const attackMediumEarth = () => {
+                characterIndex.earthBender.attacks[1]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.earthBender.attacks[1])
+            }
+            const attackHeavyEarth = () => {
+                characterIndex.earthBender.attacks[2]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.earthBender.attacks[2])
+            }
+            // attack variables
+            const lightEarth = document.querySelector('.lightAttack')
+            lightEarth.addEventListener("click", () => {
+                characterIndex.earthBender.attacks[0]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.earthBender.attacks[0])
+            })
+
+            const mediumEarth= document.querySelector('.mediumAttack')
+            mediumEarth.addEventListener('click', () => {
+                characterIndex.earthBender.attacks[1]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.earthBender.attacks[1])
+            })
+
+            const heavyEarth = document.querySelector('.heavyAttack')
+            heavyEarth.addEventListener('click', () => {
+                characterIndex.earthBender.attacks[2]
+                alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.earthBender.attacks[2])
+            })
             // const attackList = document.querySelector('.attackList')
             // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Zuko'){
             player1 = characterIndex.fireBender
             alert(`Player 1 chose ${player1.name}`)
             console.log(`Player 1 chose ${player1.name}`)
+
+        // FIRE----------------------
+            const attackLightFire = () => {
+                characterIndex.fireBender.attacks[0]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.fireBender.attacks[0])
+            }
+            const attackMediumFire = () => {
+                characterIndex.fireBender.attacks[1]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.fireBender.attacks[1])
+            }
+            const attackHeavyFire = () => {
+                characterIndex.fireBender.attacks[2]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.fireBender.attacks[2])
+            }
+            // attack variables
+            const lightFire = document.querySelector('.lightAttack')
+            lightFire.addEventListener("click", () => {
+                characterIndex.fireBender.attacks[0]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.fireBender.attacks[0])
+            })
+
+            const mediumFire= document.querySelector('.mediumAttack')
+            mediumFire.addEventListener('click', () => {
+                characterIndex.fireBender.attacks[1]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.fireBender.attacks[1])
+            })
+
+            const heavyFire = document.querySelector('.heavyAttack')
+            heavyFire.addEventListener('click', () => {
+                characterIndex.fireBender.attacks[2]
+                alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.fireBender.attacks[2])
+            })
             // const attackList = document.querySelector('.attackList')
             // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
         }else if(name == 'Katara'){
@@ -32,6 +145,44 @@ const playGame = {
             console.log(`Player 1 chose ${player1.name}`)
             // const attackList = document.querySelector('.attackList')
             // attackList.innerHTML = '<a href="#" class="loadFight" onclick = "playGame.startFight()">Start Fight!</a>'
+
+        // WATER----------------------
+            const attackLightWater = () => {
+                characterIndex.waterBender.attacks[0]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.waterBender.attacks[0])
+            }
+            const attackMediumWater = () => {
+                characterIndex.waterBender.attacks[1]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.waterBender.attacks[1])
+            }
+            const attackHeavyWater = () => {
+                characterIndex.waterBender.attacks[2]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.waterBender.attacks[2])
+            }
+            // attack variables
+            const lightWater = document.querySelector('.lightAttack')
+            lightWater.addEventListener("click", () => {
+                characterIndex.waterBender.attacks[0]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[0]} to do -10 damage`)
+                console.log(characterIndex.waterBender.attacks[0])
+            })
+
+            const mediumWater= document.querySelector('.mediumAttack')
+            mediumWater.addEventListener('click', () => {
+                characterIndex.waterBender.attacks[1]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[1]} to do -20 damage`)
+                console.log(characterIndex.waterBender.attacks[1])
+            })
+
+            const heavyWater = document.querySelector('.heavyAttack')
+            heavyWater.addEventListener('click', () => {
+                characterIndex.waterBender.attacks[2]
+                alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[2]} to do -30 damage`)
+                console.log(characterIndex.waterBender.attacks[2])
+            })
         }else{
             alert('error, character not selected')
             console.log('error, character not selected')
@@ -81,158 +232,15 @@ const playGame = {
         // attack layouts
         // AIR
         // attack layouts
-        // AIR----------------------
-        const attackLightAir = () => {
-            characterIndex.airBender.attacks[0]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
-            console.log(characterIndex.airBender.attacks[0])
-        }
-        const attackMediumAir = () => {
-            characterIndex.airBender.attacks[1]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
-            console.log(characterIndex.airBender.attacks[1])
-        }
-        const attackHeavyAir = () => {
-            characterIndex.airBender.attacks[2]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
-            console.log(characterIndex.airBender.attacks[2])
-        }
-        // attack variables
-        const lightAir = document.querySelector('.lightAttack')
-        lightAir.addEventListener("click", () => {
-            characterIndex.airBender.attacks[0]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[0]} to do -10 damage`)
-            console.log(characterIndex.airBender.attacks[0])
-        })
+        
 
-        const mediumAir= document.querySelector('.mediumAttack')
-        mediumAir.addEventListener('click', () => {
-            characterIndex.airBender.attacks[1]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[1]} to do -20 damage`)
-            console.log(characterIndex.airBender.attacks[1])
-        })
-
-        const heavyAir = document.querySelector('.heavyAttack')
-        heavyAir.addEventListener('click', () => {
-            characterIndex.airBender.attacks[2]
-            alert(`${characterIndex.airBender.name} used ${characterIndex.airBender.attacks[2]} to do -30 damage`)
-            console.log(characterIndex.airBender.attacks[2])
-        })
-
-        // EARTH----------------------
-        const attackLightEarth = () => {
-            characterIndex.airBender.attacks[0]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
-            console.log(characterIndex.earthBender.attacks[0])
-        }
-        const attackMediumEarth = () => {
-            characterIndex.earthBender.attacks[1]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
-            console.log(characterIndex.earthBender.attacks[1])
-        }
-        const attackHeavyEarth = () => {
-            characterIndex.earthBender.attacks[2]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
-            console.log(characterIndex.earthBender.attacks[2])
-        }
-        // attack variables
-        const lightEarth = document.querySelector('.lightAttack')
-        lightEarth.addEventListener("click", () => {
-            characterIndex.earthBender.attacks[0]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
-            console.log(characterIndex.earthBender.attacks[0])
-        })
-
-        const mediumEarth= document.querySelector('.mediumAttack')
-        mediumEarth.addEventListener('click', () => {
-            characterIndex.earthBender.attacks[1]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
-            console.log(characterIndex.earthBender.attacks[1])
-        })
-
-        const heavyEarth = document.querySelector('.heavyAttack')
-        heavyEarth.addEventListener('click', () => {
-            characterIndex.earthBender.attacks[2]
-            alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
-            console.log(characterIndex.earthBender.attacks[2])
-        })
-        // const attackLightEarth = () => {
-        //     characterIndex.earthBender.attacks[0]
-        //     alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[0]} to do -10 damage`)
-        //     console.log(characterIndex.earthBender.attacks[0])
-        // }
-        // const attackMediumEarth = () => {
-        //     characterIndex.earthBender.attacks[1]
-        //     alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[1]} to do -20 damage`)
-        //     console.log(characterIndex.earthBender.attacks[1])
-        // }
-        // const attackHeavyEarth = () => {
-        //     characterIndex.earthBender.attacks[2]
-        //     alert(`${characterIndex.earthBender.name} used ${characterIndex.earthBender.attacks[2]} to do -30 damage`)
-        //     console.log(characterIndex.earthBender.attacks[2])
-        // }
-        // // attack variables
-        // const lightEarth = document.querySelector('.lightAttack')
-        // lightEarth.addEventListener('click', attackLightEarth())
-
-        // const mediumEarth = document.querySelector('.mediumAttack')
-        // mediumEarth.addEventListener('click', mediumLightEarth())
-
-        // const heavyEarth = document.querySelector('.heavyAttack')
-        // heavyEarth.addEventListener('click', heavyLightEarth())
+        
+        
 
 
-        // // FIRE----------------------
-        // const attackLightFire = (event) => {
-        //     characterIndex.fireBender.attacks[0]
-        //     alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[0]} to do -10 damage`)
-        //     console.log(characterIndex.fireBender.attacks[0])
-        // }
-        // const attackMediumFire = (event) => {
-        //     characterIndex.fireBender.attacks[1]
-        //     alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[1]} to do -20 damage`)
-        //     console.log(characterIndex.fireBender.attacks[1])
-        // }
-        // const attackHeavyFire = (event) => {
-        //     characterIndex.fireBender.attacks[2]
-        //     alert(`${characterIndex.fireBender.name} used ${characterIndex.fireBender.attacks[2]} to do -30 damage`)
-        //     console.log(characterIndex.fireBender.attacks[2])
-        // }
-        // // attack variables
-        // const lightFire= document.querySelector('.lightAttack')
-        // lightFire.addEventListener('click', attackLightFire())
+        
 
-        // const mediumFire = document.querySelector('.mediumAttack')
-        // mediumFire.addEventListener('click', mediumLightFire())
-
-        // const heavyFire = document.querySelector('.heavyAttack')
-        // heavyFire.addEventListener('click', heavyLightFire())
-
-        // // WATER----------------------
-        // const attackLightWater = (event) => {
-        //     characterIndex.waterBender.attacks[0]
-        //     alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[0]} to do -10 damage`)
-        //     console.log(characterIndex.waterBender.attacks[0])
-        // }
-        // const attackMediumWater = (event) => {
-        //     characterIndex.waterBender.attacks[1]
-        //     alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[1]} to do -20 damage`)
-        //     console.log(characterIndex.waterBender.attacks[1])
-        // }
-        // const attackHeavyWater = (event) => {
-        //     characterIndex.waterBender.attacks[2]
-        //     alert(`${characterIndex.waterBender.name} used ${characterIndex.waterBender.attacks[2]} to do -30 damage`)
-        //     console.log(characterIndex.waterBender.attacks[2])
-        // }
-        // // attack variables
-        // const lightWater = document.querySelector('.lightAttack')
-        // lightWater.addEventListener('click', attackLightWater())
-
-        // const mediumWater = document.querySelector('.mediumAttack')
-        // mediumWater.addEventListener('click', mediumLightWater())
-
-        // const heavyWater = document.querySelector('.heavyAttack')
-        // heavyWater.addEventListener('click', heavyLightWater())
+        
 
         
         // if else statements for player2
